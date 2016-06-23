@@ -463,7 +463,6 @@
         <div class="container">
             <div class="row">
                 <div class="contact-heading">
-                    <h4>stay in touch</h4>
                     <h2>Contact us</h2>
                 </div>
                 <div class="col-md-2 col-md-offset-1 col-xs-4 col-sm-4">
@@ -480,24 +479,43 @@
                     <i class="fa fa-envelope-o"></i>
                     <p>Bignunz1031@gmail.com</p>
                 </div>
-                <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
-                    <article class="contact-form">
-                        <form action="contact" method="get" id="form1">
-                            <div class="col-md-5 col-md-offset-1 contact-form-left">
-                                <input class="name" type="text" placeholder="NAME*">
-                                <input class="email" type="email" placeholder="EMAIL*">
-                                <input class="subject" type="text" placeholder="SUBJECT*">
-                            </div>
-                            <div class="col-md-5 contact-form-right text-right">
-                                <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-                                <input type="submit" class="submit-btn" value="send message">
-                            </div>
-                        </form>
-                    </article>
-                </div>
             </div>
         </div>
+        </div>
+        </div>
     </section>
+    <form class="form-inline">
+        <fieldset>
+            <div class="form-group">
+                <label for="textinput" class="control-label col-sm-2">Name:</label>
+                <br>
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="textinput" placeholder="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textinput" class="control-label col-sm-2">Email:</label>
+                <br>
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="textinput" placeholder="E-Mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textinput" class="control-label col-sm-2">Subject:</label>
+                <br>
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="textinput" placeholder="Subject">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="textarea">Message:</label>
+                <br>
+               <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" placeholder="Message">
+                </div>
+            </div>
+        </fieldset>
+    </form>
     <!-- google map api -->
     <div class="map">
         <div class="container-fluid">
@@ -531,13 +549,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/wow.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBGVNFrlzQURAt858e34_eOIwdyxzMqv0w"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDpJxhe3CCL0OMt8nN695e-7UMFlpLeR0o"></script>
     <script src="js/gmaps.js"></script>
     <script>
     var map = new GMaps({
         el: '#map',
         lat: 40.650002,
-        lng: -73.949997
+        lng: -73.949997,
+        width: '100%',
+        height: '500px',
     });
     </script>
 </body>
