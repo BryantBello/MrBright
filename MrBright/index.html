@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.js"></script>
     <!--[if lt IE 9]>
@@ -493,46 +494,37 @@
     </section>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4 col-xs-3 col-sm-4">
-                        <label>Name:</label>
-                    </div>
-                    <div class="col-md-8 col-xs-9 col-sm-8">
-                        <input type="text" placeholder="Name">
-                    </div>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Full Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Full Name">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4 col-xs-3 col-sm-4">
-                        <label>Email:</label>
-                    </div>
-                    <div class="col-md-8 col-xs-9 col-sm-8">
-                        <input type="text" placeholder="Email">
-                    </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email Address</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Email Address">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4 col-xs-3 col-sm-4">
-                        <label>Subject:</label>
-                    </div>
-                    <div class="col-md-8 col-xs-9 col-sm-8">
-                        <input type="text" placeholder="Subject">
-                    </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="col-sm-2 control-label">Subject</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Subject">
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4 col-xs-3 col-sm-4">
-                        <label>Message:</label>
-                    </div>
-                    <div class="col-md-8 col-xs-9 col-sm-8">
-                        <input type="text" placeholder="Message">
-                    </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-10">
+                 <textarea class="form-control" rows="3" placeholder="Message"></textarea>
                 </div>
-            </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-danger btn-lg btn-block">Send</button>
+                </div>
+              </div>
+            </form>
         </div>
     </div>
     <!-- footer starts here -->
