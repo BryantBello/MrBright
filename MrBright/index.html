@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/map.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.js"></script>
     <!--[if lt IE 9]>
@@ -212,7 +213,7 @@
         <div class="container">
             <h2>What we offer (besides all the music you want)</h2>
             <div class="col-md-6 wow zoomIn animated">
-                <h2>Photo Booth</h2>
+                <h1>Photo Booth</h1>
                 <p>NOW offering the hottest new trend in the party business: Photo booths – ask about them. Have your guests come on over to our photo booth and take funny pictures of themselves and create memories that will last a lifetime. Our booths come with an attendant and each guest goes home with a keepsake photo.</p>
                 <ul class="list-group">
                     <li class="list-group-item">Our 3X6 Professional Event Photo Booth (Designed For 1-2 Guests Per Session)</li>
@@ -460,76 +461,69 @@
     </section>
     <!-- end of price-plan section -->
     <!-- contact section -->
-    <!-- google map api -->
-    <div class="map">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="map"></div>
-                <!-- api map -->
-            </div>
-        </div>
-    </div>
-    <section class="contact text-center" id="contact">
-        <div class="container">
-            <div class="row">
+
+     <div id="simap">
+    <section class="contact text-center" id="contact" >
+       
+        <div class="container" >
+            <div class="row" >
                 <div class="contact-heading">
                     <h2>Contact us</h2>
                 </div>
                 <div class="col-md-2 col-md-offset-1 col-xs-4 col-sm-4">
-                    <i class="fa fa-phone"></i>
-                    <p>DJ Services</p>
-                    <p>Rick: 347-723-4886</p>
-                    <p>Anthony: 347-423-3156</p>
+                    
+                    <h2>DJ Services</h2>
+                    <h4>Rick: 347-723-4886</h4>
+                    <h4>Anthony: 347-423-3156</h4>
                 </div>
                 <div class="col-md-2 col-md-offset-2 col-xs-4 col-sm-4">
-                    <i class="fa fa-map-marker"></i>
-                    <p>Staten Island, NY</p>
+                    <h2>Located in</h2>
+                    <h4>Staten Island, NY</h4>
                 </div>
                 <div class="col-md-2 col-md-offset-2 col-xs-4 col-sm-4 clearfix">
-                    <i class="fa fa-envelope-o"></i>
-                    <p>Bignunz1031@gmail.com</p>
+                    <h2>Email us</h2>
+                    <h4>Bignunz1031@gmail.com</h4>
                 </div>
             </div>
         </div>
-
     </section>
+    <div id="simap">
     <div class="container">
+        
         <div class="row">
             <form class="form-horizontal">
-              <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Full Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" placeholder="Full Name">
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Full Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                    </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">Email Address</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" placeholder="Email Address">
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email Address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="subject" class="col-sm-2 control-label">Subject</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" placeholder="Subject">
+                <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Subject</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Subject">
+                    </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="message" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-10">
-                 <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-danger btn-lg btn-block">Send</button>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block">Send</button>
+                    </div>
                 </div>
-              </div>
             </form>
         </div>
     </div>
-
-
     <!-- footer starts here -->
     <footer class="footer text-center">
         <div class="container">
@@ -563,6 +557,7 @@
         lng: -74.1502,
         width: '100%',
         height: '500px',
+
     });
     </script>
 </body>
